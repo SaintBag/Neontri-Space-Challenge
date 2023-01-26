@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = LaunchViewModel(apiService: ApiService())
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                Text(viewModel.errorMessage)
+                List {
+                    ForEach(viewModel.launches, id: \.id) { launch in
+                        Text(launch.name) 
+                            .foregroundColor(.blue)
+                            .listRowSeparator(.hidden)
+                    }
+                }
+                .navigationTitle("Upcoming Launches")
+                .task {
+                   await viewModel.fetchLunch()
+                }
+            }
         }
-        .padding()
     }
 }
 

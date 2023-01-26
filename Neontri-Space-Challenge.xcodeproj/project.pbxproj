@@ -18,6 +18,7 @@
 		29A0F0282982DE7100EDAD1A /* MissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F0272982DE7100EDAD1A /* MissionModel.swift */; };
 		29A0F02A2982DE9700EDAD1A /* PadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F0292982DE9700EDAD1A /* PadModel.swift */; };
 		29A0F02C2982DED800EDAD1A /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F02B2982DED800EDAD1A /* LocationModel.swift */; };
+		29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3B2822982E31E0069428A /* LaunchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		29A0F0272982DE7100EDAD1A /* MissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModel.swift; sourceTree = "<group>"; };
 		29A0F0292982DE9700EDAD1A /* PadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadModel.swift; sourceTree = "<group>"; };
 		29A0F02B2982DED800EDAD1A /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		29F3B2822982E31E0069428A /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,18 @@
 		29A0F01A2982854100EDAD1A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				29F3B2812982E2F90069428A /* LaunchViewModel */,
 				29A0F00B2982814100EDAD1A /* ContentView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		29F3B2812982E2F90069428A /* LaunchViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				29F3B2822982E31E0069428A /* LaunchViewModel.swift */,
+			);
+			path = LaunchViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				29A0F018298282AA00EDAD1A /* LaunchModel.swift in Sources */,
 				29A0F00C2982814100EDAD1A /* ContentView.swift in Sources */,
 				29A0F0222982DDB400EDAD1A /* LaunchStatusModel.swift in Sources */,
+				29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */,
 				29A0F0262982DE2600EDAD1A /* RocketModel.swift in Sources */,
 				29A0F02C2982DED800EDAD1A /* LocationModel.swift in Sources */,
 				29A0F0282982DE7100EDAD1A /* MissionModel.swift in Sources */,
