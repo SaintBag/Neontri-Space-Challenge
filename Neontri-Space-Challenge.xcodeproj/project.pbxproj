@@ -23,6 +23,7 @@
 		29DD3B392983DF750016A0C6 /* ImagePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD3B382983DF750016A0C6 /* ImagePlaceholderView.swift */; };
 		29E974B62982F63000719FC4 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E974B52982F63000719FC4 /* LaunchView.swift */; };
 		29E974B82983022600719FC4 /* FakeEventForPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E974B72983022600719FC4 /* FakeEventForPreview.swift */; };
+		29F0E6F22983EDC0000ECB34 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 29F0E6F12983EDC0000ECB34 /* URLImage */; };
 		29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3B2822982E31E0069428A /* LaunchViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F0E6F22983EDC0000ECB34 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +164,9 @@
 			dependencies = (
 			);
 			name = "Neontri-Space-Challenge";
+			packageProductDependencies = (
+				29F0E6F12983EDC0000ECB34 /* URLImage */,
+			);
 			productName = "Neontri-Space-Challenge";
 			productReference = 29A0F0062982814100EDAD1A /* Neontri-Space-Challenge.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +195,9 @@
 				Base,
 			);
 			mainGroup = 29A0EFFD2982814100EDAD1A;
+			packageReferences = (
+				29F0E6F02983EDC0000ECB34 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 29A0F0072982814100EDAD1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -429,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29F0E6F02983EDC0000ECB34 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29F0E6F12983EDC0000ECB34 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29F0E6F02983EDC0000ECB34 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29A0EFFE2982814100EDAD1A /* Project object */;
 }

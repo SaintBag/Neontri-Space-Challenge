@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct LaunchView: View {
     @StateObject var viewModel = LaunchViewModel(apiService: ApiService())
@@ -13,7 +14,7 @@ struct LaunchView: View {
     
     var body: some View {
         VStack {
-            ImagePlaceholderView()
+            ImagePlaceholderView(imageString: launch.image, id: launch.id)
             LaunchEventDetailsView(
                 rocketName: launch.name,
                 companyName: launch.launchServiceProvider?.name, 
