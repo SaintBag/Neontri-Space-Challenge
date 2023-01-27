@@ -16,7 +16,7 @@ struct Launch: Codable, Identifiable {
     let id: String
     let name: String
     let status: LaunchStatus
-    let net: String
+    let net: Date?
     let probability: Int?
     let launchServiceProvider: LaunchServiceProvider?
     let rocket: Rocket
