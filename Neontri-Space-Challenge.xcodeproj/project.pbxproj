@@ -26,6 +26,7 @@
 		29F0E6F22983EDC0000ECB34 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 29F0E6F12983EDC0000ECB34 /* URLImage */; };
 		29F0E6F4298421D6000ECB34 /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0E6F3298421D6000ECB34 /* LaunchDetailsViewModel.swift */; };
 		29F0E6F7298424C0000ECB34 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0E6F6298424C0000ECB34 /* ApiService.swift */; };
+		29F0E6FA29842579000ECB34 /* dateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0E6F929842579000ECB34 /* dateExtension.swift */; };
 		29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3B2822982E31E0069428A /* LaunchViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		29E974B72983022600719FC4 /* FakeEventForPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEventForPreview.swift; sourceTree = "<group>"; };
 		29F0E6F3298421D6000ECB34 /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
 		29F0E6F6298424C0000ECB34 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		29F0E6F929842579000ECB34 /* dateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateExtension.swift; sourceTree = "<group>"; };
 		29F3B2822982E31E0069428A /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				29A0F0092982814100EDAD1A /* Neontri_Space_ChallengeApp.swift */,
+				29F0E6F82984254D000ECB34 /* Extension */,
 				29F0E6F5298424AB000ECB34 /* Service */,
 				29A0F01A2982854100EDAD1A /* Screens */,
 				29A0F0192982852F00EDAD1A /* Models */,
@@ -152,6 +155,14 @@
 				29F0E6F6298424C0000ECB34 /* ApiService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		29F0E6F82984254D000ECB34 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				29F0E6F929842579000ECB34 /* dateExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		29F3B2812982E2F90069428A /* LaunchViewModel */ = {
@@ -247,6 +258,7 @@
 				29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */,
 				29A0F0262982DE2600EDAD1A /* RocketModel.swift in Sources */,
 				29A0F02C2982DED800EDAD1A /* LocationModel.swift in Sources */,
+				29F0E6FA29842579000ECB34 /* dateExtension.swift in Sources */,
 				29DD3B392983DF750016A0C6 /* ImagePlaceholderView.swift in Sources */,
 				29A0F0282982DE7100EDAD1A /* MissionModel.swift in Sources */,
 				29DD3B352983DE000016A0C6 /* LaunchDetailsView.swift in Sources */,

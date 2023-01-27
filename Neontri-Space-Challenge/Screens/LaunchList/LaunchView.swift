@@ -21,7 +21,7 @@ struct LaunchView: View {
                 locationName: launch.pad.location.name,
                 countryCode: launch.pad.location.countryCode.rawValue,
                 eventType: launch.launchServiceProvider?.type?.rawValue,
-                date: viewModel.dateToString(date: launch.net))
+                date: launch.net?.formatted() ?? "")
         }
         .padding()
     }

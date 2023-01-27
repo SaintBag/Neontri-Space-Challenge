@@ -26,15 +26,6 @@ class LaunchViewModel: ObservableObject {
             }
         }
     }
-    
-    func dateToString(date: Date?) -> String {
-        guard let date = date else { return "Uknown date"}
-        let dateFormater = DateFormatter()
-        dateFormater.locale = Locale(identifier: "en_US_POSIX")
-        dateFormater.dateFormat = "MM-dd-yyyy HH:mm"
-        let stringDate = dateFormater.string(from: date)
-        return stringDate
-    }
 }
 
 enum LaunchError: LocalizedError {
