@@ -17,7 +17,7 @@ struct LaunchDetailsView: View {
     let wikiUrl: String?
     
     var body: some View {
-        VStack {
+        VStack() {
             Text(rocketName ?? "")
                 .font(.title)
                 .fontWeight(.bold)
@@ -30,13 +30,15 @@ struct LaunchDetailsView: View {
             Text(missionDescription ?? "")
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 30)
-            Text(startDate ?? "")
+            Text("Start Date:\n\(startDate ?? "")")
+                .padding(.bottom, 6)
             Text(wikiUrl ?? "")
                 .onTapGesture {
                     load(url: wikiUrl)
                 }
             Spacer()
         }
+        .multilineTextAlignment(.center)
         .font(.system(size: 20))
         .padding()
         .ignoresSafeArea()

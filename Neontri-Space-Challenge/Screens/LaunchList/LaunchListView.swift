@@ -42,7 +42,7 @@ struct LaunchListView: View {
                         }
                     }
                 }
-                .padding(.horizontal, 8)
+                .padding(.horizontal, 8) 
                 .navigationBarTitle("Upcoming Rocket Events")
                 .foregroundColor(.white)
                 .task {
