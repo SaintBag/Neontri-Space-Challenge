@@ -8,7 +8,6 @@
 import Foundation
 
 class LaunchDetailsViewModel: ObservableObject {
-    
     private let launch: Launch
     
     init(launch: Launch) {
@@ -21,10 +20,4 @@ class LaunchDetailsViewModel: ObservableObject {
     var missionType: String { launch.mission?.name ?? "" }
     var startDateDescription: String { launch.net?.formatted() ?? "" }
     var wikiUrl: String { launch.pad.wikiURL ?? "" }
-    
-    func loadMoreInfo() {
-        guard let link = launch.pad.wikiURL,
-              let url = URL(string: link) else { return }
-        // TODO: Open this link somehow (openUrl(url))
-    }
 }

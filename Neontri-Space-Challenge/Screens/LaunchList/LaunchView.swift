@@ -9,7 +9,7 @@ import SwiftUI
 import URLImage
 
 struct LaunchView: View {
-    @StateObject var viewModel = LaunchViewModel(apiService: ApiService())
+    @StateObject var viewModel = LauchListViewModel(apiService: ApiService())
     let launch: Launch
     
     var body: some View {

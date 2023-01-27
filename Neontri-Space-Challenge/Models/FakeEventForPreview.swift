@@ -16,7 +16,7 @@ struct fakeEvent {
             name: Name.launchSuccessful,
             abbrev: Abbrev.success,
             description: "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."),
-        net: Date(),
+        net: Date(timeIntervalSince1970: 1590242591),
         probability: 90,
         launchServiceProvider: LaunchServiceProvider(
             name: "Mitsubishi Heavy Industries",

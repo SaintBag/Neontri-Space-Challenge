@@ -29,12 +29,9 @@ class ApiService: LaunchFetchingProtocol {
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
             let response = try decoder.decode(LaunchesResponse.self, from: data)
-            print(response)
             return response.results
             
         } catch {
-            print(data)
-            print("problem to decode JSON", error)
             throw LaunchError.invalidData
         }
     }

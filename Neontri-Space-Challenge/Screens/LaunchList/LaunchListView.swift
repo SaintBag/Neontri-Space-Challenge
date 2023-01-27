@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LaunchListView: View {
     @State private var isShowingSheet = false
-    @StateObject var viewModel = LaunchViewModel(apiService: ApiService())
+    @StateObject var viewModel = LauchListViewModel(apiService: ApiService())
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
