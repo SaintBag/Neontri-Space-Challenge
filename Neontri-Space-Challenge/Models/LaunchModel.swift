@@ -22,9 +22,9 @@ struct Launch: Codable, Identifiable, Equatable {
     let rocket: Rocket
     let mission: Mission?
     let pad: Pad
-    let webcastLive: Bool //MARK: Not sure if I need it
+    let webcastLive: Bool 
     let image: String?
-    let lastUpdated: Date? //MARK: Not sure if I need it
+    let lastUpdated: Date?
     
     enum CodingKeys: String, CodingKey {
         case id

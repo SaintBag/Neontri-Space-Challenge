@@ -29,10 +29,6 @@ struct LaunchDetailsView: View {
                 .padding(.bottom, 6)
             Text(viewModel.startDateDescription)
                 .padding(.bottom, 6)
-            Text(viewModel.wikiUrl)
-                .onTapGesture {
-                    viewModel.loadMoreInfo()
-                }
             Spacer()
         }
         .multilineTextAlignment(.center)

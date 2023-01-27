@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29312CDE298446C30071F9A1 /* LaunchDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29312CDD298446C30071F9A1 /* LaunchDetailsViewModelTests.swift */; };
 		2943D6E329842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943D6E229842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift */; };
 		29A0F00A2982814100EDAD1A /* Neontri_Space_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F0092982814100EDAD1A /* Neontri_Space_ChallengeApp.swift */; };
 		29A0F00C2982814100EDAD1A /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F00B2982814100EDAD1A /* LaunchListView.swift */; };
@@ -28,7 +29,7 @@
 		29F0E6F4298421D6000ECB34 /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0E6F3298421D6000ECB34 /* LaunchDetailsViewModel.swift */; };
 		29F0E6F7298424C0000ECB34 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0E6F6298424C0000ECB34 /* ApiService.swift */; };
 		29F0E6FA29842579000ECB34 /* dateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0E6F929842579000ECB34 /* dateExtension.swift */; };
-		29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3B2822982E31E0069428A /* LaunchViewModel.swift */; };
+		29F3B2832982E31E0069428A /* LauchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3B2822982E31E0069428A /* LauchListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29312CDD298446C30071F9A1 /* LaunchDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		2943D6E029842BC9002EFAE4 /* Neontri-Space-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Neontri-Space-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2943D6E229842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neontri_Space_ChallengeTests.swift; sourceTree = "<group>"; };
 		29A0F0062982814100EDAD1A /* Neontri-Space-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neontri-Space-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +66,7 @@
 		29F0E6F3298421D6000ECB34 /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
 		29F0E6F6298424C0000ECB34 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		29F0E6F929842579000ECB34 /* dateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateExtension.swift; sourceTree = "<group>"; };
-		29F3B2822982E31E0069428A /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		29F3B2822982E31E0069428A /* LauchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				2943D6E229842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift */,
+				29312CDD298446C30071F9A1 /* LaunchDetailsViewModelTests.swift */,
 			);
 			path = "Neontri-Space-ChallengeTests";
 			sourceTree = "<group>";
@@ -174,7 +177,7 @@
 				29E974B52982F63000719FC4 /* LaunchView.swift */,
 				29DD3B362983DED70016A0C6 /* LaunchEventDetailsView.swift */,
 				29DD3B382983DF750016A0C6 /* ImagePlaceholderView.swift */,
-				29F3B2812982E2F90069428A /* LaunchViewModel */,
+				29F3B2812982E2F90069428A /* LaunchListViewModel */,
 			);
 			path = LaunchList;
 			sourceTree = "<group>";
@@ -195,12 +198,12 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		29F3B2812982E2F90069428A /* LaunchViewModel */ = {
+		29F3B2812982E2F90069428A /* LaunchListViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				29F3B2822982E31E0069428A /* LaunchViewModel.swift */,
+				29F3B2822982E31E0069428A /* LauchListViewModel.swift */,
 			);
-			path = LaunchViewModel;
+			path = LaunchListViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29312CDE298446C30071F9A1 /* LaunchDetailsViewModelTests.swift in Sources */,
 				2943D6E329842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +327,7 @@
 				29A0F00C2982814100EDAD1A /* LaunchListView.swift in Sources */,
 				29A0F0222982DDB400EDAD1A /* LaunchStatusModel.swift in Sources */,
 				29F0E6F4298421D6000ECB34 /* LaunchDetailsViewModel.swift in Sources */,
-				29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */,
+				29F3B2832982E31E0069428A /* LauchListViewModel.swift in Sources */,
 				29A0F0262982DE2600EDAD1A /* RocketModel.swift in Sources */,
 				29A0F02C2982DED800EDAD1A /* LocationModel.swift in Sources */,
 				29F0E6FA29842579000ECB34 /* dateExtension.swift in Sources */,

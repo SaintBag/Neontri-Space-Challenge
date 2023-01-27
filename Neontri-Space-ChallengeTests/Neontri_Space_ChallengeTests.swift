@@ -25,13 +25,13 @@ class MockApiService: LaunchFetchingProtocol {
 
 final class LaunchViewModelTests: XCTestCase {
     
-    var sut: LaunchViewModel!
+    var sut: LauchListViewModel!
     var mockApiService: MockApiService!
     
     
     override func setUpWithError() throws {
         mockApiService = MockApiService()
-        sut = LaunchViewModel(apiService: mockApiService)
+        sut = LauchListViewModel(apiService: mockApiService)
         
     }
     

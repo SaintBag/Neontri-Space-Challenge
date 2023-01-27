@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-class LaunchViewModel: ObservableObject {
+class LauchListViewModel: ObservableObject {
     @Published var launches: [Launch] = []
     @Published var errorMessage = ""
     private let apiService: LaunchFetchingProtocol
