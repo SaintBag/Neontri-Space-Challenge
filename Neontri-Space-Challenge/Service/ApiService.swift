@@ -35,7 +35,7 @@ class ApiService: LaunchFetchingProtocol {
         } catch {
             print(data)
             print("problem to decode JSON", error)
-            throw LaunchError.failedToDecode(error: error)
+            throw LaunchError.invalidData
         }
     }
 }

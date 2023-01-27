@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2943D6E329842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943D6E229842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift */; };
 		29A0F00A2982814100EDAD1A /* Neontri_Space_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F0092982814100EDAD1A /* Neontri_Space_ChallengeApp.swift */; };
 		29A0F00C2982814100EDAD1A /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0F00B2982814100EDAD1A /* LaunchListView.swift */; };
 		29A0F00E2982814400EDAD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A0F00D2982814400EDAD1A /* Assets.xcassets */; };
@@ -30,7 +31,19 @@
 		29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3B2822982E31E0069428A /* LaunchViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2943D6E429842BC9002EFAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29A0EFFE2982814100EDAD1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29A0F0052982814100EDAD1A;
+			remoteInfo = "Neontri-Space-Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2943D6E029842BC9002EFAE4 /* Neontri-Space-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Neontri-Space-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2943D6E229842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neontri_Space_ChallengeTests.swift; sourceTree = "<group>"; };
 		29A0F0062982814100EDAD1A /* Neontri-Space-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neontri-Space-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A0F0092982814100EDAD1A /* Neontri_Space_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neontri_Space_ChallengeApp.swift; sourceTree = "<group>"; };
 		29A0F00B2982814100EDAD1A /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
@@ -55,6 +68,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2943D6DD29842BC9002EFAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A0F0032982814100EDAD1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,10 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2943D6E129842BC9002EFAE4 /* Neontri-Space-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2943D6E229842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift */,
+			);
+			path = "Neontri-Space-ChallengeTests";
+			sourceTree = "<group>";
+		};
 		29A0EFFD2982814100EDAD1A = {
 			isa = PBXGroup;
 			children = (
 				29A0F0082982814100EDAD1A /* Neontri-Space-Challenge */,
+				2943D6E129842BC9002EFAE4 /* Neontri-Space-ChallengeTests */,
 				29A0F0072982814100EDAD1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				29A0F0062982814100EDAD1A /* Neontri-Space-Challenge.app */,
+				2943D6E029842BC9002EFAE4 /* Neontri-Space-ChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +206,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2943D6DF29842BC9002EFAE4 /* Neontri-Space-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2943D6E829842BC9002EFAE4 /* Build configuration list for PBXNativeTarget "Neontri-Space-ChallengeTests" */;
+			buildPhases = (
+				2943D6DC29842BC9002EFAE4 /* Sources */,
+				2943D6DD29842BC9002EFAE4 /* Frameworks */,
+				2943D6DE29842BC9002EFAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2943D6E529842BC9002EFAE4 /* PBXTargetDependency */,
+			);
+			name = "Neontri-Space-ChallengeTests";
+			productName = "Neontri-Space-ChallengeTests";
+			productReference = 2943D6E029842BC9002EFAE4 /* Neontri-Space-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		29A0F0052982814100EDAD1A /* Neontri-Space-Challenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29A0F0142982814400EDAD1A /* Build configuration list for PBXNativeTarget "Neontri-Space-Challenge" */;
@@ -206,6 +254,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					2943D6DF29842BC9002EFAE4 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 29A0F0052982814100EDAD1A;
+					};
 					29A0F0052982814100EDAD1A = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -228,11 +280,19 @@
 			projectRoot = "";
 			targets = (
 				29A0F0052982814100EDAD1A /* Neontri-Space-Challenge */,
+				2943D6DF29842BC9002EFAE4 /* Neontri-Space-ChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2943D6DE29842BC9002EFAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A0F0042982814100EDAD1A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +305,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2943D6DC29842BC9002EFAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2943D6E329842BC9002EFAE4 /* Neontri_Space_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A0F0022982814100EDAD1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,7 +340,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2943D6E529842BC9002EFAE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29A0F0052982814100EDAD1A /* Neontri-Space-Challenge */;
+			targetProxy = 2943D6E429842BC9002EFAE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2943D6E629842BC9002EFAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebulla.Neontri-Space-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neontri-Space-Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Neontri-Space-Challenge";
+			};
+			name = Debug;
+		};
+		2943D6E729842BC9002EFAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebulla.Neontri-Space-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neontri-Space-Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Neontri-Space-Challenge";
+			};
+			name = Release;
+		};
 		29A0F0122982814400EDAD1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -446,6 +556,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2943D6E829842BC9002EFAE4 /* Build configuration list for PBXNativeTarget "Neontri-Space-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2943D6E629842BC9002EFAE4 /* Debug */,
+				2943D6E729842BC9002EFAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29A0F0012982814100EDAD1A /* Build configuration list for PBXProject "Neontri-Space-Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
