@@ -28,6 +28,7 @@ struct ImagePlaceholderView: View {
         } else {
             Image(systemName: "person.fill")
                 .resizable()
+                .frame(width: 200, height: 200, alignment: .center)
                 .aspectRatio(contentMode: .fit)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.blue, lineWidth: 10))

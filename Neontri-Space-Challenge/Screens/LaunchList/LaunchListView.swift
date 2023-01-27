@@ -30,14 +30,8 @@ struct LaunchListView: View {
                                     isShowingSheet.toggle()
                                     
                                 }.sheet(isPresented: $isShowingSheet) {
-                                    LaunchDetailsView(
-                                        rocketName: event.name,
-                                        missionDescription: event.mission?.description,
-                                        locationName: event.pad.location.name,
-                                        missionType: event.mission?.name,
-                                        startDate: viewModel.dateToString(date: event.net ?? Date()),
-                                        wikiUrl: event.pad.wikiURL)
-                                    .background(.black)
+                                    LaunchDetailsView(viewModel: LaunchDetailsViewModel(launch: event))
+                                        .background(.black)
                                 }
                         }
                     }

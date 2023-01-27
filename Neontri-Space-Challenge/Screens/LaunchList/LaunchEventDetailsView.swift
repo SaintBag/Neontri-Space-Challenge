@@ -31,10 +31,10 @@ struct LaunchEventDetailsView: View {
             Text("Mission type: \(eventType ?? "")")
                 .font(.title2)
             
-            Text(date ?? "Unknow")
+            Text("Start Date:\n\(date ?? "Unknow")")
                 .font(.title)
                 .minimumScaleFactor(0.01)
-                .padding(.vertical, 6.0)
+                .padding(.vertical, 8.0)
         }
         .background(.black)
         .foregroundColor(.white)
