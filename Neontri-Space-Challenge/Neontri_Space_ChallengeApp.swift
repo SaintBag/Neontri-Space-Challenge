@@ -11,7 +11,7 @@ import SwiftUI
 struct Neontri_Space_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchListView()
         }
     }
 }
