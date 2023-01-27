@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct LaunchesResponse: Codable {
+struct LaunchesResponse: Codable, Equatable {
     let count: Int
     let results: [Launch]
 }
 
-struct Launch: Codable, Identifiable {
+struct Launch: Codable, Identifiable, Equatable {
     let id: String
     let name: String
     let status: LaunchStatus

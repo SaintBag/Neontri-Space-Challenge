@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Location: Codable {
+struct Location: Codable, Equatable {
     let name: String
     let countryCode: CountryCode
     let totalLaunchCount, totalLandingCount: Int //MARK: Delete? Not sure if I need it

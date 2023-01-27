@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Rocket: Codable {
+struct Rocket: Codable, Equatable {
     let configuration: Configuration
 }
 
-struct Configuration: Codable {
+struct Configuration: Codable, Equatable {
     let fullName: String
     
     enum CodingKeys: String, CodingKey {

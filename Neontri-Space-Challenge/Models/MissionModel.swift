@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Mission: Codable {
+struct Mission: Codable, Equatable {
     let name, description: String
     
     enum CodingKeys: String, CodingKey {

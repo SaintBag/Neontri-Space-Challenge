@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct LaunchStatus : Codable {
+struct LaunchStatus : Codable, Equatable {
     let name: Name
     let abbrev: Abbrev
     let description: String?
 }
 
-enum Name: String, Codable {
+enum Name: String, Codable, Equatable {
     case ellipticalOrbit = "Elliptical Orbit"
     case geostationaryOrbit = "Geostationary Orbit"
     case geostationaryTransferOrbit = "Geostationary Transfer Orbit"

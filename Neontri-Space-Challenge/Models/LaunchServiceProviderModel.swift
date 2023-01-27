@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LaunchServiceProvider: Codable {
+struct LaunchServiceProvider: Codable, Equatable {
     let name: String
     let type: LaunchServiceProviderType?
 }

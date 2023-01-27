@@ -7,7 +7,7 @@
 
 import Foundation
 
-@MainActor
+
 class LaunchViewModel: ObservableObject {
     @Published var launches: [Launch] = []
     @Published var errorMessage = ""
@@ -16,7 +16,7 @@ class LaunchViewModel: ObservableObject {
     init(apiService: LaunchFetchingProtocol) {
         self.apiService = apiService
     }
-    
+    @MainActor
     func fetchLunch() async {
         do {
             launches = try await apiService.fetchLaunches()
@@ -32,7 +32,6 @@ enum LaunchError: LocalizedError {
     case invalidUrl
     case invalidStatusCode(statusCode: Int)
     case invalidData
-    case failedToDecode(error: Error)
     
     var errorDescription: String {
         switch self {
@@ -42,8 +41,6 @@ enum LaunchError: LocalizedError {
             return "Status code falls into the wrong range"
         case .invalidData:
             return "Response data is invalid"
-        case .failedToDecode:
-            return "Failed to decode"
         }
     }
 }

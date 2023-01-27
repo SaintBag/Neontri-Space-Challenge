@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Pad: Codable {
+struct Pad: Codable, Equatable {
     let name: String
     let wikiURL: String?
     let location: Location
