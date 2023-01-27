@@ -25,6 +25,7 @@
 		29E974B82983022600719FC4 /* FakeEventForPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E974B72983022600719FC4 /* FakeEventForPreview.swift */; };
 		29F0E6F22983EDC0000ECB34 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 29F0E6F12983EDC0000ECB34 /* URLImage */; };
 		29F0E6F4298421D6000ECB34 /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0E6F3298421D6000ECB34 /* LaunchDetailsViewModel.swift */; };
+		29F0E6F7298424C0000ECB34 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0E6F6298424C0000ECB34 /* ApiService.swift */; };
 		29F3B2832982E31E0069428A /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3B2822982E31E0069428A /* LaunchViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		29E974B52982F63000719FC4 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		29E974B72983022600719FC4 /* FakeEventForPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEventForPreview.swift; sourceTree = "<group>"; };
 		29F0E6F3298421D6000ECB34 /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
+		29F0E6F6298424C0000ECB34 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		29F3B2822982E31E0069428A /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				29A0F0092982814100EDAD1A /* Neontri_Space_ChallengeApp.swift */,
+				29F0E6F5298424AB000ECB34 /* Service */,
 				29A0F01A2982854100EDAD1A /* Screens */,
 				29A0F0192982852F00EDAD1A /* Models */,
 				29A0F00D2982814400EDAD1A /* Assets.xcassets */,
@@ -141,6 +144,14 @@
 				29F3B2812982E2F90069428A /* LaunchViewModel */,
 			);
 			path = LaunchList;
+			sourceTree = "<group>";
+		};
+		29F0E6F5298424AB000ECB34 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				29F0E6F6298424C0000ECB34 /* ApiService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		29F3B2812982E2F90069428A /* LaunchViewModel */ = {
@@ -229,6 +240,7 @@
 			files = (
 				29A0F018298282AA00EDAD1A /* LaunchModel.swift in Sources */,
 				29E974B62982F63000719FC4 /* LaunchView.swift in Sources */,
+				29F0E6F7298424C0000ECB34 /* ApiService.swift in Sources */,
 				29A0F00C2982814100EDAD1A /* LaunchListView.swift in Sources */,
 				29A0F0222982DDB400EDAD1A /* LaunchStatusModel.swift in Sources */,
 				29F0E6F4298421D6000ECB34 /* LaunchDetailsViewModel.swift in Sources */,
